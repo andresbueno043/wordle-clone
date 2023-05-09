@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { GithubButton } from "react-github-link-button/dist"
 import Wordle from "./components/Wordle";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
     <div className="App">
       <h1> Wordle</h1>
       {solution && <Wordle solution={solution}/>}
+      <GithubButton message="Check out my code!" href="https://github.com/andresbueno043/wordle-clone"/>
     </div>
   );
 }
